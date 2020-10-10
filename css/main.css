@@ -1,6 +1,6 @@
 body {
   font-family: 'Mukta';
-  margin: 10vh 20%;
+  margin: 20vh 20%;
 }
 
 h1 {
@@ -10,4 +10,67 @@ h1 {
 
 p {
   font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin: 4rem 0;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 90rem) {
+  body {
+    margin: 10vh 20%;
+  }
+}
+
+@media screen and (max-width: 60rem) {
+  body {
+    margin: 10vh 10%;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  body {
+    margin: 5vh 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: .5rem 0;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #495057;
+    width: 75%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: block;
+  }
+
+  .icon {
+    width: 1.75rem;
+  }
 }
