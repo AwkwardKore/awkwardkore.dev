@@ -1,14 +1,3 @@
-@font-face {
-  font-family: "Mukta";
-  src: url("/assets/fonts/Mukta-Light.ttf");
-}
-
-@font-face {
-  font-family: "Mukta";
-  src: url("/assets/fonts/Mukta-SemiBold.ttf");
-  font-weight: bold;
-}
-
 body {
   font-family: "Mukta";
   margin: 20vh 20%;
