@@ -10,23 +10,18 @@ body {
   margin: 0;
 }
 
-hr {
-  background-color: var(--text-color);
-  border-style: none;
-  height: 1px;
-  margin-block: 0;
-  margin-inline: 0;
-  width: 240px;
-}
-
-.section {
-  grid-column: content-start / content-end;
+a {
+  color: var(--text-color);
 }
 
 .content {
   display: grid;
   grid-template-columns: minmax(28px, 1fr) [content-start] minmax(256px, 1024px) [content-end] minmax(28px, 1fr);
   margin: 32px 0;
+}
+
+.section {
+  grid-column: content-start / content-end;
 }
 
 .title-section {
@@ -37,19 +32,6 @@ hr {
 
 .title {
   margin: 8px 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.icon {
-  color: var(--text-color);
-  fill: var(--text-color);
-  margin: 0 16px;
-  width: 28px;
 }
 
 @media (min-width: 640px) {
@@ -64,10 +46,6 @@ hr {
   .text {
     font-size: 18px;
   }
-
-  .icon {
-    width: 32px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -81,10 +59,6 @@ hr {
 
   .text {
     font-size: 24px;
-  }
-
-  .icon {
-    width: 36px;
   }
 }
 
