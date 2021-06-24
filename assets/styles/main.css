@@ -90,7 +90,7 @@ hr {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #181818;
+    --background-color: #101010;
     --text-color: #ffffff;
   }
 }
