@@ -1,80 +1,96 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: "Mukta";
-  margin: 20vh 20%;
+  margin: 0;
 }
 
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
+hr {
+  background-color: var(--text-color);
+  border-style: none;
+  height: 1px;
+  margin-block: 0;
+  margin-inline: 0;
+  width: 240px;
 }
 
-p {
-  font-size: 1.5rem;
+.section {
+  grid-column: content-start / content-end;
 }
 
-footer {
+.content {
+  display: grid;
+  grid-template-columns: minmax(28px, 1fr) [content-start] minmax(256px, 1024px) [content-end] minmax(28px, 1fr);
+  margin: 32px 0;
+}
+
+.title-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 8px 0;
+}
+
+.footer {
   display: flex;
   justify-content: center;
-  height: auto;
-  margin: 4rem 0;
-}
-
-a {
-  color: #000000;
-}
-
-.mobile-title {
-  display: none;
+  margin-top: 32px;
 }
 
 .icon {
-  width: 2rem;
-  height: 2rem;
-  margin: 0 1rem;
+  color: var(--text-color);
+  fill: var(--text-color);
+  margin: 0 16px;
+  width: 28px;
 }
 
-@media screen and (max-width: 90rem) {
-  body {
-    margin: 10vh 20%;
-  }
-}
-
-@media screen and (max-width: 60rem) {
-  body {
-    margin: 10vh 10%;
-  }
-}
-
-@media screen and (max-width: 30rem) {
-  body {
-    margin: 5vh 1.5rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin: .5rem 0;
-  }
-
+@media (min-width: 640px) {
   hr {
-    border: none;
-    height: 1px;
-    background-color: #495057;
-    width: 75%;
-  }
-
-  p {
-    font-size: 1rem;
+    width: 288px;
   }
 
   .title {
-    display: none;
+    font-size: 32px;
   }
 
-  .mobile-title {
-    display: block;
+  .text {
+    font-size: 18px;
   }
 
   .icon {
-    width: 1.75rem;
+    width: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  hr {
+    width: 320px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .icon {
+    width: 36px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #181818;
+    --text-color: #ffffff;
   }
 }
