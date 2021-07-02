@@ -3,6 +3,11 @@
   --text-color: #000000;
 }
 
+::selection {
+  color: var(--background-color);
+  background: var(--text-color);
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -16,7 +21,7 @@ hr {
   height: 1px;
   margin-block: 0;
   margin-inline: 0;
-  width: 240px;
+  width: 15rem;
 }
 
 a {
@@ -25,8 +30,8 @@ a {
 
 .content {
   display: grid;
-  grid-template-columns: minmax(28px, 1fr) [content-start] minmax(256px, 1024px) [content-end] minmax(28px, 1fr);
-  margin: 32px 0;
+  grid-template-columns: minmax(1.75rem, 1fr) [content-start] minmax(16rem, 64rem) [content-end] minmax(1.75rem, 1fr);
+  height: 100vh;
 }
 
 .section {
@@ -34,67 +39,45 @@ a {
 }
 
 .title-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  align-self: center;
+  justify-self: center;
 }
 
-.title {
-  margin: 8px 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.icon {
-  color: var(--text-color);
-  fill: var(--text-color);
-  margin: 0 16px;
-  width: 28px;
-}
-
-@media (min-width: 640px) {
-  hr {
-    width: 288px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .text {
-    font-size: 18px;
-  }
-
-  .icon {
-    width: 32px;
-  }
-}
-
-@media (min-width: 1024px) {
-  hr {
-    width: 320px;
-  }
-
-  .title {
-    font-size: 38px;
-  }
-
-  .text {
-    font-size: 24px;
-  }
-
-  .icon {
-    width: 36px;
-  }
+.link {
+  font-weight: bold;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #101010;
     --text-color: #ffffff;
+  }
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.25rem;
+  }
+
+  hr {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    width: 20rem;
   }
 }
