@@ -3,6 +3,11 @@
   --text-color: #000000;
 }
 
+::selection {
+  color: var(--background-color);
+  background: var(--text-color);
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
