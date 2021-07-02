@@ -31,7 +31,7 @@ a {
 .content {
   display: grid;
   grid-template-columns: minmax(28px, 1fr) [content-start] minmax(256px, 1024px) [content-end] minmax(28px, 1fr);
-  margin: 32px 0;
+  height: 100vh;
 }
 
 .section {
@@ -39,33 +39,18 @@ a {
 }
 
 .title-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  align-self: center;
+  justify-self: center;
 }
 
-.title {
-  margin: 8px 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.icon {
-  color: var(--text-color);
-  fill: var(--text-color);
-  margin: 0 16px;
-  width: 28px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #101010;
+    --text-color: #ffffff;
+  }
 }
 
 @media (min-width: 640px) {
-  hr {
-    width: 288px;
-  }
-
   .title {
     font-size: 32px;
   }
@@ -74,16 +59,12 @@ a {
     font-size: 18px;
   }
 
-  .icon {
-    width: 32px;
+  hr {
+    width: 288px;
   }
 }
 
 @media (min-width: 1024px) {
-  hr {
-    width: 320px;
-  }
-
   .title {
     font-size: 38px;
   }
@@ -92,14 +73,7 @@ a {
     font-size: 24px;
   }
 
-  .icon {
-    width: 36px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #101010;
-    --text-color: #ffffff;
+  hr {
+    width: 320px;
   }
 }

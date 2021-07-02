@@ -1,24 +1,5 @@
-.back-section {
-  justify-self: start;
-}
-
-.back-link {
-  display: flex;
-}
-
-.back-icon {
-  margin-right: 8px;
-  width: 16px;
-}
-
-@media (min-width: 640px) {
-  .back-icon {
-    width: 18px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .back-icon {
-    width: 24px;
-  }
+.content {
+  grid-template-rows: repeat(2, auto) 1fr;
+  margin-top: 48px;
+  height: calc(100vh - 48px)
 }
