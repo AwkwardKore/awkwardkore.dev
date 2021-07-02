@@ -43,6 +43,10 @@ a {
   justify-self: center;
 }
 
+.link {
+  font-weight: bold;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #101010;
