@@ -21,7 +21,7 @@ hr {
   height: 1px;
   margin-block: 0;
   margin-inline: 0;
-  width: 240px;
+  width: 15rem;
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 
 .content {
   display: grid;
-  grid-template-columns: minmax(28px, 1fr) [content-start] minmax(256px, 1024px) [content-end] minmax(28px, 1fr);
+  grid-template-columns: minmax(1.75rem, 1fr) [content-start] minmax(16rem, 64rem) [content-end] minmax(1.75rem, 1fr);
   height: 100vh;
 }
 
@@ -52,28 +52,28 @@ a {
 
 @media (min-width: 640px) {
   .title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .text {
-    font-size: 18px;
+    font-size: 1.25rem;
   }
 
   hr {
-    width: 288px;
+    width: 18rem;
   }
 }
 
 @media (min-width: 1024px) {
   .title {
-    font-size: 38px;
+    font-size: 2.25rem;
   }
 
   .text {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   hr {
-    width: 320px;
+    width: 20rem;
   }
 }

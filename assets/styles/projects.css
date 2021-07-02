@@ -1,5 +1,5 @@
 .content {
   grid-template-rows: repeat(2, auto) 1fr;
-  margin-top: 48px;
-  height: calc(100vh - 48px)
+  margin-top: 3rem;
+  height: calc(100vh - 3rem);
 }
